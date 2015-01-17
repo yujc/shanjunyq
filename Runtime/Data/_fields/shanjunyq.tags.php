@@ -1,0 +1,1 @@
+a:6:{i:0;s:6:"tag_id";i:1;s:4:"name";i:2;s:5:"click";i:3;s:5:"quote";s:3:"_pk";s:6:"tag_id";s:5:"_type";a:4:{s:6:"tag_id";s:7:"int(10)";s:4:"name";s:11:"varchar(20)";s:5:"click";s:7:"int(10)";s:5:"quote";s:7:"int(10)";}}
