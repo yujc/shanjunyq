@@ -14,9 +14,8 @@
 # ------------------------------------------------------
 # Server version 5.5.38
 
-DROP DATABASE IF EXISTS `shanjunyq`;
-CREATE DATABASE `shanjunyq` /*!40100 DEFAULT CHARACTER SET utf8 */;
-USE `shanjunyq`;
+
+USE `my8600659`;
 
 #
 # Source for table sj_admin_group

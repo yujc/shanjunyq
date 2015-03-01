@@ -25,7 +25,7 @@
 		<div class="m-pg-lst">
 			<div class="pic">
             <!--if{$vo['image']}-->
-			<img src="{$vo.image}" width="120" height="80">
+				<a href="{$vo.aurl}"><img src="{cut_image($vo.image,120,80,3)}" width="120" height="80"></a>
 			<!--{else}-->
 			<img src="images/fm.jpg" width="120" height="80">
 			<!--{/if}-->
@@ -33,7 +33,7 @@
 			<div class="info">
 				<div class="tt"><a href="{$vo.aurl}">{$vo.title}</a></div>
 				<div class="dsc">{$vo.description}</div>
-				<div class="time"><span>时间：{date('Y-m-d',$vo['time'])}</span> <span>访问：{$vo.views}</span></div>
+				<div class="time"><span>时间：{date('Y-m-d',$vo['time'])}</span><br/><span>访问：{$vo.views}</span></div>
 			</div>
 			<div class="f-cb"></div>
 		</div>

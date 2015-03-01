@@ -8,7 +8,8 @@ a:hover { color: #cd1a1c }
 .g-hd { height: 356px; }
 .g-bd { padding-top: 20px; }
 .g-mn { float: left; width: 100%; }
-.g-sd { float: right; width: 260px; }
+.g-sd { float: right; width: 260px;
+    display: none; }
 .g-ft { margin-top: 20px; margin-bottom: 20px; text-align:center; background-color:#fff; padding: 20px 0; line-height:25px;}
 .s-box { background-color: #fff; padding: 10px; }
 /* 头部 */
@@ -81,8 +82,9 @@ a:hover { color: #cd1a1c }
 .m-news .lst li {height: 25px; overflow: hidden; background-image: url(../images/line-1.jpg); background-repeat: no-repeat; background-position: left center; padding-left: 10px; }
 .m-news .lst li a { float: left; height: 25px; line-height:25px; width:230px; overflow:hidden }
 .m-news .lst li span { float: right; color: #999; line-height: 25px; }
-.m-news .hot { font-size:14px; padding-top:15px; line-height:25px; height:70px; overflow:hidden;}
-.m-news .hot img { margin-right:10px; border:1px solid #ddd; padding:3px; float:left;display:inline; width:65px; height:60px;}
+.m-news .hot { font-size:14px; padding-top:15px; line-height:25px; height:88px; overflow:hidden; position: relative;}
+.m-news .hot img { margin-right:10px; border:1px solid #ddd; padding:3px; float:left;display:inline; width:120px; height:80px;}
+.m-news .hot .time { color:#333; line-height:26px; position: absolute; right: 10px; top: 16px; font-size: 12px;}
 /* 面包屑导航 */
 .m-crumb { overflow: hidden; line-height: 1.5; zoom: 1; background-color:#fff; padding:10px; }
 .m-crumb ul {}
@@ -93,11 +95,11 @@ width: 20px; text-align: center; font-size: 12px; color: #ccc; font-family: \5b8
 /* 页面 */
 .m-pg-lst { background-color:#fff; padding:10px; margin-top:10px;}
 .m-pg-lst .pic { float:left; width:130px;}
-.m-pg-lst .pic img { width:120px; height:80px; margin-top:10px;}
-.m-pg-lst .info { float:right; width:540px;} 
+.m-pg-lst .pic img { width:120px; height:80px;border:1px solid #ddd; padding:3px; margin-top:10px;}
+.m-pg-lst .info { float:right; width:800px; position: relative;}
 .m-pg-lst .info .tt { font-size:14px; line-height:30px; height:35px; font-weight:bold}
 .m-pg-lst .info .dsc { font-size:12px; color:#999; line-height:18px;}
-.m-pg-lst .info .time { color:#333; line-height:30px;}
+.m-pg-lst .info .time { color:#333; line-height:30px; position: absolute; right: 10px; top: 16px;}
 .m-page { margin-left:auto; margin-right:auto; clear:both; overflow:hidden; padding:20px 0;}
 .m-page a { float:left; background:#777; padding-left:10px; padding-right:10px; height:39px; line-height:39px; text-align:center; font-family:"Arial"; display:block; margin-right:4px; color:#fff; text-decoration:none; font-weight:bold;}
 .m-page span { float:left; width:37px; height:39px; line-height:39px; text-align:center; font-family:"Lucida Console"; display:block; margin-right:4px; color:#777;}

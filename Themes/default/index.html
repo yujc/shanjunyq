@@ -58,14 +58,16 @@
             <!--class{app="Article" label="categoryList" class_id="3" limit="4" type="1"  }-->
 			<div class="m-news">
 				<div class="tt"><a href="{$class.curl}">{$class.name} </a><span><a href="{$class.curl}">more</a></span></div>                
-                <!--list{ app="DuxCms" label="contentList" limit="1" image="true"  class_id=$class['class_id']  }-->
-				<div class="hot"><a href="{$list.aurl}"><img src="{$list.image}" width="70" height="48" alt="{$list.aurl}"></a><a href="{$list.aurl}">{$list.title}</a>
-					<div class="f-cb"></div>
+                <!--list{ app="DuxCms" label="contentList" limit="0" image="true"  class_id=$class['class_id']  }-->
+				<div class="hot"><a href="{$list.aurl}"><img src="{cut_image($list.image,120,80,3)}" width="120" height="80" alt="{$list.aurl}"></a>
+					<a href="{$list.aurl}">{$list.title}</a>
+					<div class="f-cb">{$list.description}</div>
+					<div class="time"><span>时间：{date('Y-m-d',$list['time'])}</span><br/><span>访问：{$list.views}</span></div>
 				</div>
 				<!--{/list}-->
 				<div class="lst">
 					<ul>
-                        <!--list{app="DuxCms" label="contentList" limit="5" class_id=$class['class_id']}-->
+                        <!--list{app="DuxCms" label="contentList" limit="-1" class_id=$class['class_id']}-->
 						<li><a href="{$list.aurl}">{$list.title}</a><span>{date('Y-m-d',$list['time'])}</span></li>
 						<!--{/list}-->
 					</ul>
